@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,15 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="VideoPlayerViewController" customModule="StampAll" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCj-bx-DtH">
-                                <rect key="frame" x="0.0" y="267" width="600" height="5"/>
+                                <rect key="frame" x="0.0" y="311" width="414" height="274"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="WG0-Tp-Ped"/>
+                                    <constraint firstAttribute="height" constant="274" id="xkb-l5-gFx"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yy-4J-Blx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="92"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Yy-4J-Blx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-Oh-WDc">
                                         <rect key="frame" x="359" y="52" width="47" height="32"/>
@@ -37,12 +43,10 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="PmI-MO-PQu"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6GP-4J-vVh">
-                                <rect key="frame" x="0.0" y="450" width="600" height="150"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6GP-4J-vVh">
+                                <rect key="frame" x="0.0" y="746" width="414" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-mj-4k8">
                                         <rect key="frame" x="187" y="60" width="40" height="31"/>
@@ -91,24 +95,13 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="wiH-MZ-D6r"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6GP-4J-vVh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9dF-mD-xxQ"/>
-                            <constraint firstItem="MCj-bx-DtH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Adv-4y-Hbv"/>
-                            <constraint firstItem="MCj-bx-DtH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qb0-wh-niG"/>
-                            <constraint firstItem="6GP-4J-vVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SYN-Ii-Eb7"/>
-                            <constraint firstItem="MCj-bx-DtH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="267" id="dbS-S0-1vc"/>
-                            <constraint firstItem="8Yy-4J-Blx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gpc-Yp-Tjd"/>
-                            <constraint firstItem="8Yy-4J-Blx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m0y-U1-xLS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MCj-bx-DtH" secondAttribute="bottom" constant="328" id="nKa-gE-pSC"/>
-                            <constraint firstAttribute="bottom" secondItem="6GP-4J-vVh" secondAttribute="bottom" id="urI-eS-tPV"/>
-                            <constraint firstItem="8Yy-4J-Blx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zhi-9Y-R0b"/>
+                            <constraint firstItem="MCj-bx-DtH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="obk-Lg-Z7T"/>
+                            <constraint firstItem="MCj-bx-DtH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sH2-kb-Mon"/>
                         </constraints>
                     </view>
                     <connections>
