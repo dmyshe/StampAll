@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class FileItemCollectionViewCell: UICollectionViewCell {
-    static let identifier = "FileItemCollectionViewCell"
+    static let reuseID = "FileItemCollectionViewCell"
     
     
     @IBOutlet private weak var fileThumbnailImageView: UIImageView!

@@ -27,7 +27,7 @@ extension FileBrowserViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FileItemCollectionViewCell.identifier, for: indexPath) as! FileItemCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FileItemCollectionViewCell.reuseID, for: indexPath) as! FileItemCollectionViewCell
         cell.configure(fileName: "hello")
         return cell
     }
