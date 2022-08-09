@@ -10,10 +10,14 @@ import UIKit
 class FileBrowserViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true 
+    }
 }
 
 extension FileBrowserViewController: UICollectionViewDelegate {
-    
 }
 
 extension FileBrowserViewController: UICollectionViewDataSource {
