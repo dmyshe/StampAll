@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323B324328A276E100CF0F54 /* FileBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B324228A276E100CF0F54 /* FileBrowserViewController.swift */; };
+		323B324628A27C4D00CF0F54 /* FileItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B324528A27C4D00CF0F54 /* FileItemCollectionViewCell.swift */; };
 		32C823762875D69B00044A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C823752875D69B00044A19 /* AppDelegate.swift */; };
 		32C823782875D69B00044A19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C823772875D69B00044A19 /* SceneDelegate.swift */; };
 		32C8237A2875D69B00044A19 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C823792875D69B00044A19 /* VideoPlayerViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323B324228A276E100CF0F54 /* FileBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserViewController.swift; sourceTree = "<group>"; };
+		323B324528A27C4D00CF0F54 /* FileItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		32C823722875D69B00044A19 /* StampAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StampAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C823752875D69B00044A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C823772875D69B00044A19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323B324428A27C1C00CF0F54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				323B324528A27C4D00CF0F54 /* FileItemCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		32B5B8702883566D00A5A315 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		32B5B872288356A000A5A315 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				323B324428A27C1C00CF0F54 /* Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,7 +109,7 @@
 				32B5B8702883566D00A5A315 /* Storyboards */,
 				32F33E822876FC0600FA2ED6 /* Extension */,
 				32C823892875D6AD00044A19 /* AppDelegate */,
-				32C8238B2875D71900044A19 /* ViewControllers */,
+				32C8238B2875D71900044A19 /* Controllers */,
 			);
 			path = StampAll;
 			sourceTree = "<group>";
@@ -110,12 +123,13 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		32C8238B2875D71900044A19 /* ViewControllers */ = {
+		32C8238B2875D71900044A19 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				32C823792875D69B00044A19 /* VideoPlayerViewController.swift */,
+				323B324228A276E100CF0F54 /* FileBrowserViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		32F33E822876FC0600FA2ED6 /* Extension */ = {
@@ -197,9 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323B324328A276E100CF0F54 /* FileBrowserViewController.swift in Sources */,
 				32C8237A2875D69B00044A19 /* VideoPlayerViewController.swift in Sources */,
 				32F33E842876FC4500FA2ED6 /* UIControl+publisher(for).swift in Sources */,
 				32C823762875D69B00044A19 /* AppDelegate.swift in Sources */,
+				323B324628A27C4D00CF0F54 /* FileItemCollectionViewCell.swift in Sources */,
 				32C823782875D69B00044A19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
